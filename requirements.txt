@@ -1,0 +1,2 @@
+Flask>=3.0.0
+eulumdat-py>=1.0.0

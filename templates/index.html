@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        LDT Photometric Viewer
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+    <!-- SC Brand fonts: https://shortcircuit.company/SCbrand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Plotly -->
+
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- ================================================= -->
+    <!-- HEADER -->
+    <!-- ================================================= -->
+
+    <header class="topbar">
+
+        <div style="display:flex; align-items:center; gap:14px;">
+
+            <img
+                class="sc-logo"
+                src="https://shortcircuit.company/assets/img/logo.svg"
+                alt="Short Circuit Company"
+                onerror="this.style.display='none'"
+            >
+
+            <div>
+
+            <h1>
+                LDT Photometric Viewer
+            </h1>
+
+            <p>
+                Interactive EULUMDAT (.LDT)
+                photometric analysis
+            </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <button
+                id="exportJson"
+                class="secondary-button"
+                disabled
+            >
+                Export JSON
+            </button>
+
+
+            <button
+                id="exportCsv"
+                class="secondary-button"
+                disabled
+            >
+                Export CSV
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================================= -->
+    <!-- SAVED FILES -->
+    <!-- ================================================= -->
+
+    <section
+        id="savedFilesPanel"
+        class="saved-files-panel hidden"
+    >
+
+        <div class="saved-files-header">
+            <span class="sc-small-head">Saved Files</span>
+            <span class="sc-note">Previously uploaded .LDT files &mdash; reopen one or jump straight to its polar curve.</span>
+        </div>
+
+        <div
+            id="savedFilesList"
+            class="saved-files-list"
+        ></div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- UPLOAD -->
+    <!-- ================================================= -->
+
+    <section
+        id="uploadSection"
+        class="upload-section"
+    >
+
+        <div
+            id="dropZone"
+            class="drop-zone"
+        >
+
+            <div class="upload-icon">
+                ⬆
+            </div>
+
+            <h2>
+                Upload LDT File
+            </h2>
+
+            <p>
+                Drag and drop your EULUMDAT file here
+            </p>
+
+            <p class="small-text">
+                or
+            </p>
+
+            <label
+                for="fileInput"
+                class="upload-button"
+            >
+                Browse File
+            </label>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".ldt,.LDT"
+                hidden
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- LOADING -->
+    <!-- ================================================= -->
+
+    <div
+        id="loading"
+        class="loading hidden"
+    >
+
+        <div class="spinner"></div>
+
+        <span>
+            Parsing photometric data...
+        </span>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- ERROR -->
+    <!-- ================================================= -->
+
+    <div
+        id="errorBox"
+        class="error-box hidden"
+    >
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- CONTENT -->
+    <!-- ================================================= -->
+
+    <main
+        id="content"
+        class="content hidden"
+    >
+
+
+        <!-- FILE INFO -->
+
+        <div class="file-info">
+
+            <span class="file-label">
+                Loaded File
+            </span>
+
+            <strong
+                id="filename"
+            >
+            </strong>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- SUMMARY CARDS -->
+        <!-- ================================================= -->
+
+        <section
+            id="summaryCards"
+            class="summary-grid"
+        >
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- TABS -->
+        <!-- ================================================= -->
+
+        <div class="tabs">
+
+            <button
+                class="tab-button active"
+                data-tab="overview"
+            >
+                Overview
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="polar"
+            >
+                Polar Diagram
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="heatmap"
+            >
+                Heatmap
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="matrix"
+            >
+                Intensity Matrix
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="header"
+            >
+                Header Data
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="scConvert"
+            >
+                Full Beam / IES
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="scCompare"
+            >
+                Compare / Compliance
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="scRoom"
+            >
+                Room Heatmap
+            </button>
+
+
+            <button
+                class="tab-button"
+                data-tab="json"
+            >
+                Raw JSON
+            </button>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- OVERVIEW -->
+        <!-- ================================================= -->
+
+        <section
+            id="overview"
+            class="tab-content active"
+        >
+
+            <div class="panel">
+
+                <h2>
+                    Photometric Overview
+                </h2>
+
+                <div
+                    id="overviewTable"
+                    class="property-grid"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- POLAR -->
+        <!-- ================================================= -->
+
+        <section
+            id="polar"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            Polar Intensity Diagram
+                        </h2>
+
+                        <p>
+                            Select C-planes to visualize
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="polarControls"
+                    class="polar-controls"
+                >
+                </div>
+
+
+                <div
+                    id="polarChart"
+                    class="chart"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- HEATMAP -->
+        <!-- ================================================= -->
+
+        <section
+            id="heatmap"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <h2>
+                    Intensity Distribution Heatmap
+                </h2>
+
+                <div
+                    id="heatmapChart"
+                    class="chart"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- MATRIX -->
+        <!-- ================================================= -->
+
+        <section
+            id="matrix"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <div class="table-toolbar">
+
+                    <h2>
+                        Intensity Matrix
+                    </h2>
+
+                    <input
+                        type="text"
+                        id="matrixSearch"
+                        placeholder="Search intensity..."
+                    >
+
+                </div>
+
+
+                <div
+                    class="table-container"
+                >
+
+                    <table
+                        id="matrixTable"
+                    >
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- HEADER -->
+        <!-- ================================================= -->
+
+        <section
+            id="header"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <div class="table-toolbar">
+
+                    <h2>
+                        Header Information
+                    </h2>
+
+                    <input
+                        type="text"
+                        id="headerSearch"
+                        placeholder="Search fields..."
+                    >
+
+                </div>
+
+
+                <div
+                    id="headerContent"
+                    class="property-grid"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SC TOOLS: FULL BEAM / IES EXPORT -->
+        <!-- ================================================= -->
+
+        <section
+            id="scConvert"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <h2>Symmetry &amp; IES Export</h2>
+
+                <p class="sc-note" id="scSymmetryInfo">
+                    Upload a file to see its detected ISYM symmetry.
+                </p>
+
+                <div class="sc-panel-grid">
+
+                    <div>
+                        <h3 class="sc-headline">Convert half-beam &rarr; full-beam</h3>
+                        <p class="sc-note">
+                            Mirrors the stored C-planes per ISYM and rewrites the
+                            header as ISYM=0 (full 0-360&deg; measurement),
+                            producing a normalised .LDT you can download.
+                        </p>
+                        <button id="scConvertBtn" class="sc-action-button" disabled>
+                            Convert &amp; Download Full-Beam .LDT
+                        </button>
+                    </div>
+
+                    <div>
+                        <h3 class="sc-headline">Export IES (Type C)</h3>
+                        <p class="sc-note">
+                            Normalises to full-beam first, then writes an
+                            IESNA LM-63-2002 Type C file (absolute candela,
+                            scaled by the file's total rated lumens).
+                        </p>
+                        <button id="scExportIesBtn" class="sc-action-button" disabled>
+                            Export &amp; Download .IES
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SC TOOLS: COMPARE / COMPLIANCE -->
+        <!-- ================================================= -->
+
+        <section
+            id="scCompare"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <h2>Compare to Reference (.ies / .ldt)</h2>
+
+                <p class="sc-note">
+                    Compares the loaded LDT against a reference photometric
+                    file on a common (C, &gamma;) sampling grid, using bilinear
+                    interpolation. Reports candela deviation, flux delta, peak
+                    intensity delta and beam-angle delta.
+                </p>
+
+                <div class="sc-field" style="max-width:360px;">
+                    <label for="scRefFile">Reference file (.ies or .ldt)</label>
+                    <input type="file" id="scRefFile" accept=".ies,.IES,.ldt,.LDT">
+                </div>
+
+                <div class="sc-field" style="max-width:200px;">
+                    <label for="scTolerance">Tolerance (%)</label>
+                    <input type="number" id="scTolerance" value="10" min="1" max="100" step="1">
+                </div>
+
+                <button id="scCompareBtn" class="sc-action-button" disabled>
+                    Run Compliance Comparison
+                </button>
+
+                <div id="scCompareResults" style="margin-top:20px;"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SC TOOLS: ROOM HEATMAP -->
+        <!-- ================================================= -->
+
+        <section
+            id="scRoom"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <h2>Room Illuminance Heatmap</h2>
+
+                <p class="sc-note">
+                    Duplicates the loaded luminaire on a spacing grid across
+                    the room and computes point-by-point illuminance
+                    (inverse-square + cosine law) on the work plane, reporting
+                    U0 (E<sub>min</sub>/E<sub>avg</sub>) and U1 (E<sub>min</sub>/E<sub>max</sub>).
+                </p>
+
+                <div class="sc-panel-grid">
+
+                    <div class="sc-field">
+                        <label for="scRoomLength">Room length (m)</label>
+                        <input type="number" id="scRoomLength" value="10" step="0.1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scRoomWidth">Room width (m)</label>
+                        <input type="number" id="scRoomWidth" value="8" step="0.1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scFixtureHeight">Fixture mounting height (m, from floor)</label>
+                        <input type="number" id="scFixtureHeight" value="3.0" step="0.1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scWorkPlaneHeight">Work plane height (m, from floor)</label>
+                        <input type="number" id="scWorkPlaneHeight" value="0.75" step="0.05">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scSpacingX">Fixture spacing X (m)</label>
+                        <input type="number" id="scSpacingX" value="2.0" step="0.1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scSpacingY">Fixture spacing Y (m)</label>
+                        <input type="number" id="scSpacingY" value="2.0" step="0.1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scGridRes">Calc grid resolution (m, blank = auto)</label>
+                        <input type="number" id="scGridRes" placeholder="auto" step="0.05">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scMaintFactor">Maintenance factor</label>
+                        <input type="number" id="scMaintFactor" value="1.0" step="0.05" min="0.1" max="1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scOverridePower">Override power (W, blank = use file)</label>
+                        <input type="number" id="scOverridePower" placeholder="e.g. 154" step="0.1" min="0">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scOverrideEfficacy">Override efficacy (lm/W, blank = use file)</label>
+                        <input type="number" id="scOverrideEfficacy" placeholder="e.g. 133.12" step="0.01" min="0">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scRhoCeiling">Ceiling reflectance (0-1)</label>
+                        <input type="number" id="scRhoCeiling" value="0.70" step="0.01" min="0" max="1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scRhoWalls">Wall reflectance (0-1)</label>
+                        <input type="number" id="scRhoWalls" value="0.50" step="0.01" min="0" max="1">
+                    </div>
+
+                    <div class="sc-field">
+                        <label for="scRhoFloor">Floor reflectance (0-1)</label>
+                        <input type="number" id="scRhoFloor" value="0.20" step="0.01" min="0" max="1">
+                    </div>
+
+                </div>
+
+                <p class="sc-note">
+                    Leave power/efficacy blank to use the file's own declared
+                    lumens. Fill in both to recompute total lumens as
+                    power &times; efficacy and rescale the candela solid by
+                    (new lumens / file's declared lumens) before running the
+                    point-by-point calculation. Reflectances default to the
+                    DIALux evo "new project" / EN&nbsp;12464-1 combination
+                    (ceiling 0.70 / walls 0.50 / floor 0.20) and add a
+                    room-average interreflected component on top of the
+                    direct point-by-point result (Zonal Cavity Method) --
+                    set all three to 0 to get the old direct-only output.
+                </p>
+
+                <button id="scHeatmapBtn" class="sc-action-button" disabled>
+                    Calculate Room Heatmap
+                </button>
+
+                <div id="scRoomStats" class="sc-stat-grid"></div>
+
+                <div id="scRoomHeatmapChart" class="chart" style="margin-top:16px;"></div>
+
+            </div>
+
+        </section>
+
+
+
+        <section
+            id="json"
+            class="tab-content"
+        >
+
+            <div class="panel">
+
+                <h2>
+                    Parsed JSON
+                </h2>
+
+                <pre
+                    id="jsonContent"
+                >
+                </pre>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='app.js') }}"
+></script>
+
+<script
+    src="{{ url_for('static', filename='sc-tools.js') }}"
+></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+[
+  {
+    "file_id": "d29f8803c85343b18dc780009eb1f0fe_41448.ldt",
+    "filename": "41448.ldt",
+    "size": 736,
+    "uploaded_at": "2026-09-08T21:30:39.952555+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 1,
+      "c_planes": 1,
+      "gamma_angles": 37,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 474.4,
+      "average_intensity": 238.14054054054057,
+      "total_samples": 37,
+      "is_half_beam": true,
+      "symmetry_label": "Rotationally symmetric (point-symmetric)",
+      "total_lumens": 20500.0,
+      "total_watts": 154.0
+    }
+  },
+  {
+    "file_id": "24b43d4cde574b868069801e3cbf16b8_19863.ldt",
+    "filename": "19863.ldt",
+    "size": 7368,
+    "uploaded_at": "2026-09-09T01:07:36.251730+00:00",
+    "summary": {
+      "luminaire_name": "RC132V W60L60 PSD OC LED34S/- NO",
+      "luminaire_number": "",
+      "manufacturer": "PHILIPS/2020-07-16 Eulumdat/1   B-Tilt = 0.00",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 41,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 477.3,
+      "average_intensity": 213.29905149051493,
+      "total_samples": 2952,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 3400.0,
+      "total_watts": 29.0
+    }
+  }
+]
