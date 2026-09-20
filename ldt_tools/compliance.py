@@ -56,12 +56,16 @@ def solid_from_ldt(ldt: Ldt, label: str = "LDT") -> Solid:
     return Solid(label, c_angles, g_angles, candela, lumens)
 
 
-def solid_from_ies(ies_data: Dict, label: str = "IES") -> Solid:
+def solid_from_ies(ies_data: Dict, label: str = "IES", rotation_deg: float = 90.0) -> Solid:
+    # Bring the IES into the EULUMDAT frame (IES C0 == LDT C270 -> LDT C = IES C + 90)
+    from .convention import expand_ies_to_full, shift_c_planes
+    h_full, rows = expand_ies_to_full(ies_data["h_angles"], ies_data["candela"])
+    rows = shift_c_planes(h_full, rows, -float(rotation_deg))   # undo the export shift
     return Solid(
         label,
-        ies_data["h_angles"],
+        h_full,
         ies_data["v_angles"],
-        ies_data["candela"],
+        rows,
         ies_data.get("total_lumens"),
     )
 
@@ -82,6 +86,7 @@ def compare(
     reference: Dict,
     reference_kind: str = "ies",
     tolerance_pct: float = 10.0,
+    rotation_deg: float = 90.0,
     grid_c: int = 37,
     grid_g: int = 19,
 ) -> Dict:
@@ -92,7 +97,7 @@ def compare(
     Returns a JSON-serialisable compliance report.
     """
     a = solid_from_ldt(ldt, label="Source LDT")
-    b = solid_from_ies(reference, label="Reference IES") if reference_kind == "ies" \
+    b = solid_from_ies(reference, label="Reference IES", rotation_deg=rotation_deg) if reference_kind == "ies" \
         else solid_from_ldt(reference, label="Reference LDT")
 
     grid = _common_grid(a, b, grid_c, grid_g)

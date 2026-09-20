@@ -524,6 +524,16 @@
                             IESNA LM-63-2002 Type C file (absolute candela,
                             scaled by the file's total rated lumens).
                         </p>
+                        <div class="sc-field">
+                            <label for="scIesRotation">C-plane rotation before export (degrees)</label>
+                            <input type="number" id="scIesRotation" value="90" step="1" min="-360" max="360">
+                            <p class="sc-note">
+                                90 (default) = standard EULUMDAT &rarr; LM-63 shift (C90 &rarr; C0).
+                                0 = copy as-is. 270 (or -90) = opposite direction &mdash;
+                                use it if the fixture is not symmetric at 180&deg; and
+                                comes out flipped in DIALux. Also used by the Compare tool.
+                            </p>
+                        </div>
                         <button id="scExportIesBtn" class="sc-action-button" disabled>
                             Export &amp; Download .IES
                         </button>
@@ -719,6 +729,24 @@
 
 </div>
 
+
+<script>
+    // Sub-folder support: prefix every absolute fetch("/api/...") with the
+    // folder the app is mounted in ("" when served from the domain root).
+    window.APP_BASE = {{ request.script_root|tojson }};
+    (function () {
+        var base = window.APP_BASE || "";
+        if (!base) return;
+        var nativeFetch = window.fetch;
+        window.fetch = function (url, opts) {
+            if (typeof url === "string" && url.charAt(0) === "/" &&
+                url.charAt(1) !== "/" && url.indexOf(base + "/") !== 0) {
+                url = base + url;
+            }
+            return nativeFetch.call(this, url, opts);
+        };
+    })();
+</script>
 
 <script
     src="{{ url_for('static', filename='app.js') }}"

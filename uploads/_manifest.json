@@ -48,5 +48,30 @@
       "total_lumens": 3400.0,
       "total_watts": 29.0
     }
+  },
+  {
+    "file_id": "db26dba3250e49c68cfdefb646da9e91_46944.ldt",
+    "filename": "46944.ldt",
+    "size": 861,
+    "uploaded_at": "2026-09-12T21:53:54.532026+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 1,
+      "c_planes": 1,
+      "gamma_angles": 46,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 1331.6,
+      "average_intensity": 396.74782608695654,
+      "total_samples": 46,
+      "is_half_beam": true,
+      "symmetry_label": "Rotationally symmetric (point-symmetric)",
+      "total_lumens": 25000.0,
+      "total_watts": 157.0
+    }
   }
 ]

@@ -140,6 +140,12 @@
     // ------------------------------------------------------------
     // IES EXPORT
     // ------------------------------------------------------------
+    function getRotationDeg() {
+        const el = document.getElementById("scIesRotation");
+        const v = el ? parseFloat(el.value) : NaN;
+        return Number.isFinite(v) ? v : 90;
+    }
+
     exportIesBtn.addEventListener("click", async () => {
         const fileId = currentFileId();
         if (!fileId) return;
@@ -154,7 +160,8 @@
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     file_id: fileId,
-                    original_filename: currentFilename()
+                    original_filename: currentFilename(),
+                    rotation_deg: getRotationDeg()
                 })
             });
 
@@ -199,6 +206,7 @@
             form.append("file_id", fileId);
             form.append("tolerance_pct", tolerance);
             form.append("reference_file", refFile);
+            form.append("rotation_deg", getRotationDeg());
 
             const resp = await fetch("/api/compare", {
                 method: "POST",

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+uploads/*
+!uploads/.gitkeep
+passenger_error.log
+stderr.log
+.env

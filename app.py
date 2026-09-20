@@ -25,13 +25,71 @@ from ldt_tools import symmetry, ies_writer, ies_reader, compliance, heatmap
 
 BASE_DIR = Path(__file__).resolve().parent
 
-UPLOAD_FOLDER = BASE_DIR / "uploads"
 
-UPLOAD_FOLDER.mkdir(exist_ok=True)
+# Minimal .env loader (no extra dependency). Reads KEY=VALUE lines from a
+# ".env" file next to this file. Real environment variables win over .env.
+
+def _load_dotenv(path):
+    try:
+        with open(path, "r", encoding="utf-8-sig") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                if line.startswith("export "):
+                    line = line[7:].strip()
+                key, _, value = line.partition("=")
+                key, value = key.strip(), value.strip()
+                if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+                    value = value[1:-1]
+                if key:
+                    os.environ.setdefault(key, value)
+    except FileNotFoundError:
+        pass
+
+
+_load_dotenv(BASE_DIR / ".env")
+
+# Where uploaded / generated files are stored. Defaults to ./uploads next to
+# this file; set LDT_UPLOAD_DIR to keep them somewhere else (e.g. outside the
+# web root on a shared host).
+UPLOAD_FOLDER = Path(os.environ.get("LDT_UPLOAD_DIR", BASE_DIR / "uploads")).resolve()
+
+UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
 
 MANIFEST_PATH = UPLOAD_FOLDER / "_manifest.json"
 
 app = Flask(__name__)
+
+
+# ------------------------------------------------------------
+# Sub-folder deployment (e.g. https://example.com/ldt/)
+# ------------------------------------------------------------
+# Passenger (cPanel "Setup Python App") normally sets SCRIPT_NAME to the
+# sub-folder by itself, and Flask/url_for then just works. If your server does
+# NOT do that (plain reverse proxy, gunicorn behind a prefix, ...) set the
+# environment variable APP_BASE_PATH=/ldt and this middleware takes care of it.
+
+class PrefixMiddleware:
+
+    def __init__(self, wsgi_app, prefix):
+        self.wsgi_app = wsgi_app
+        self.prefix = "/" + prefix.strip("/") if prefix.strip("/") else ""
+
+    def __call__(self, environ, start_response):
+        if self.prefix:
+            path = environ.get("PATH_INFO", "")
+            if path == self.prefix or path.startswith(self.prefix + "/"):
+                environ["PATH_INFO"] = path[len(self.prefix):] or "/"
+            if not environ.get("SCRIPT_NAME", "").rstrip("/").endswith(self.prefix):
+                environ["SCRIPT_NAME"] = environ.get("SCRIPT_NAME", "").rstrip("/") + self.prefix
+        return self.wsgi_app(environ, start_response)
+
+
+_base_path = os.environ.get("APP_BASE_PATH", "").strip()
+
+if _base_path:
+    app.wsgi_app = PrefixMiddleware(app.wsgi_app, _base_path)
 
 app.config["UPLOAD_FOLDER"] = str(UPLOAD_FOLDER)
 
@@ -852,6 +910,8 @@ def export_ies():
         }), 400
 
     try:
+        rotation_deg = float(data.get("rotation_deg", 90.0))
+
         ldt = LdtReader.read(filepath)
 
         # Always normalise to full-beam (ISYM=0) first so the IES horizontal
@@ -867,6 +927,7 @@ def export_ies():
             manufacturer=data.get("manufacturer"),
             luminaire_catalog=data.get("luminaire_catalog"),
             test_report=data.get("test_report"),
+            rotation_deg=rotation_deg,
         )
 
         download_name = Path(data.get("original_filename", "luminaire.ldt")).stem + ".ies"
@@ -894,6 +955,7 @@ def compare_files():
 
     file_id = request.form.get("file_id")
     tolerance_pct = float(request.form.get("tolerance_pct", 10.0))
+    rotation_deg = float(request.form.get("rotation_deg", 90.0))
 
     filepath = resolve_upload(file_id)
 
@@ -936,7 +998,7 @@ def compare_files():
         if ref_ext == ".ies":
             ref_data = ies_reader.read_ies(ref_path)
             report = compliance.compare(
-                full_ldt, ref_data, reference_kind="ies", tolerance_pct=tolerance_pct
+                full_ldt, ref_data, reference_kind="ies", tolerance_pct=tolerance_pct, rotation_deg=rotation_deg
             )
         else:
             ref_ldt = symmetry.to_full_beam(LdtReader.read(ref_path))
@@ -1071,8 +1133,10 @@ def compute_heatmap():
 
 if __name__ == "__main__":
 
+    # Local development server:  python app.py   ->  http://127.0.0.1:5000/
+    # Optional env vars: HOST, PORT, FLASK_DEBUG=0
     app.run(
-        debug=True,
-        host="127.0.0.1",
-        port=5000
+        debug=os.environ.get("FLASK_DEBUG", "1") == "1",
+        host=os.environ.get("HOST", "127.0.0.1"),
+        port=int(os.environ.get("PORT", "5000"))
     )

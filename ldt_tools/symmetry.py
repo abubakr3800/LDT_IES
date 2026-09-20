@@ -124,7 +124,10 @@ def to_full_beam(ldt: Ldt) -> Ldt:
     # Defensive re-mirror: rebuild the full matrix from whichever planes are
     # non-degenerate, so this function is correct even if it is ever called
     # with a matrix that was read with expand_symmetry=False.
-    if isym == 1:
+    already_full = len(matrix) == mc   # LdtReader.read() already expanded it
+    if already_full:
+        pass
+    elif isym == 1:
         matrix = [list(matrix[0]) for _ in range(mc)]
     elif isym == 2:
         matrix = _mirror_isym2(mc, matrix)

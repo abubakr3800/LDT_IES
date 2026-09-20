@@ -50,6 +50,8 @@ from typing import Optional
 
 from pyldt.model import Ldt
 
+from .convention import shift_c_planes
+
 
 def _fmt(x: float) -> str:
     return f"{float(x):.3f}".rstrip("0").rstrip(".") if isinstance(x, float) else str(x)
@@ -84,6 +86,7 @@ def write_ies(
     manufacturer: Optional[str] = None,
     luminaire_catalog: Optional[str] = None,
     test_report: Optional[str] = None,
+    rotation_deg: float = 90.0,
 ) -> str:
     """
     Write `ldt` (expected to already be full-beam / ISYM=0 — call
@@ -119,7 +122,7 @@ def write_ies(
     lamp_type = h.lamp_types[0] if h.lamp_types else "N/A"
     lines.append(f"[LAMP] {lamp_type}")
     lines.append("[_SC_SOURCE] Converted from EULUMDAT (.ldt) by SC Photometric Toolkit")
-    lines.append("[_SC_ORIGINAL_ISYM] see conversion log")
+    lines.append(f"[_SC_CONVENTION] C-plane shift applied: I_ies(C) = I_ldt(C + {float(rotation_deg):g} deg)")
     lines.append("TILT=NONE")
 
     # Line 10
@@ -149,8 +152,16 @@ def write_ies(
     # Horizontal (C) angles
     lines.append(" ".join(_fmt_num(a) for a in h_angles))
 
+    # EULUMDAT -> LM-63: length axis moves from C90-C270 to C0-C180, so
+    # I_ies(a) = I_ldt(a + 90).  Grid (h_angles) is unchanged.
+    # `rotation_deg` is user-selectable: 90 = standard EULUMDAT->LM-63 shift
+    # (default), 0 = 1:1 copy, 270/-90 = opposite direction, 180 = flip.
+    rows_out = ldt.intensities
+    if abs(float(rotation_deg) % 360.0) > 1e-9:
+        rows_out = shift_c_planes(h_angles, ldt.intensities, float(rotation_deg))
+
     # Candela values: one block of `ng` values per horizontal angle, in order
-    for row in ldt.intensities:
+    for row in rows_out:
         scaled = [v * scale for v in row]
         lines.append(" ".join(_fmt_num(v) for v in scaled))
 
