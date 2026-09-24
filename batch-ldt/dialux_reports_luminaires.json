@@ -1,0 +1,2265 @@
+{
+  "generated": "2026-09-24",
+  "source": "Indooe_md_reports.zip (46 DIALux evo report conversions)",
+  "luminaire_finder": "https://luminaires.dialux.com/",
+  "finder_note": "luminaire_url is the luminaires.dialux.com article page (scroll parameter ?_Y=... removed). luminaire_url is null where no link was provided (status not_retrieved). luminaire_file is null: no file names were provided.",
+  "luminaire_catalog": [
+    {
+      "id": "LUM-01",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "BVP130 T25 S LED131/- NO",
+      "finder_search_text": "BVP130 T25 S LED131/- NO",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/Ct9EH5lVQgOgOJd4MF7pMg",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "Ct9EH5lVQgOgOJd4MF7pMg"
+      },
+      "used_in_reports": [
+        "El Nasr Factory FL",
+        "Global factory",
+        "sun captial school"
+      ],
+      "total_pcs_all_reports": 343
+    },
+    {
+      "id": "LUM-02",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "BVP651 T25 1 xLED500-4S/757 S",
+      "finder_search_text": "BVP651 T25 1 xLED500-4S/757 S",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/QeC6fMr5SIWHVFoe6bQTDQ",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "QeC6fMr5SIWHVFoe6bQTDQ"
+      },
+      "used_in_reports": [
+        "BHC final"
+      ],
+      "total_pcs_all_reports": 312
+    },
+    {
+      "id": "LUM-03",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "BY698P LED265CW G2 WB",
+      "finder_search_text": "BY698P LED265CW G2 WB",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": null,
+        "luminaire_file": null,
+        "status": "not_retrieved",
+        "finder_article_id": null
+      },
+      "used_in_reports": [
+        "Al amal factory",
+        "Al Rajhi Specialized Cablles",
+        "Appliance Factory 1",
+        "Appliance Factory 2",
+        "Arab tech production line",
+        "Aramex option1",
+        "Aramex option3",
+        "Delta factory",
+        "Delta Factory final",
+        "Egypt Kem",
+        "El Gezawy Factory First Floor",
+        "El Monaged Factory",
+        "El Monaged Factory (1)",
+        "El Nasr Factory hb",
+        "El-Misrieen factory",
+        "Enco Steel",
+        "Estivan Factory",
+        "Estivan Factory (1)",
+        "Evedal",
+        "Global factory",
+        "Gloria Factory",
+        "Gresco",
+        "Inco Steel",
+        "Karta Misr",
+        "Montana Factory",
+        "Montana Factory 3Y",
+        "Montana Factory 5Y",
+        "Nascom",
+        "NESSTRA With 100 watt",
+        "NESSTRA With 150 watt",
+        "Ola textile factory",
+        "Ola textile factory (1)"
+      ],
+      "total_pcs_all_reports": 2927
+    },
+    {
+      "id": "LUM-04",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "LL523X 1 xLED100S/850 WB",
+      "finder_search_text": "LL523X 1 xLED100S/850 WB",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/euGjELCeRjikl8nqoQkQTw",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "euGjELCeRjikl8nqoQkQTw"
+      },
+      "used_in_reports": [
+        "Cleopatra Mall",
+        "Megapack"
+      ],
+      "total_pcs_all_reports": 48
+    },
+    {
+      "id": "LUM-05",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "LL612X 1 xLED50S/840 MB",
+      "finder_search_text": "LL612X 1 xLED50S/840 MB",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/8chV0qRlQaufOAE7Acv6Xw",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "8chV0qRlQaufOAE7Acv6Xw"
+      },
+      "used_in_reports": [
+        "El Gezawy Factory Thrid Floor",
+        "El- Mohands"
+      ],
+      "total_pcs_all_reports": 189
+    },
+    {
+      "id": "LUM-06",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "RC133V G4 W62L62 PSU 1 xLED36S/840 OC",
+      "finder_search_text": "RC133V G4 W62L62 PSU 1 xLED36S/840 OC",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/WWzCwwAoTfmPQFQTJKF9Pg",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "WWzCwwAoTfmPQFQTJKF9Pg"
+      },
+      "used_in_reports": [
+        "Fresh factory",
+        "Fresh factory option 2"
+      ],
+      "total_pcs_all_reports": 756
+    },
+    {
+      "id": "LUM-07",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "RC133V LED36S/840 OC WIA W62L62",
+      "finder_search_text": "RC133V LED36S/840 OC WIA W62L62",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/fZD7mCp8Qva7MhjjTt-wkw",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "fZD7mCp8Qva7MhjjTt-wkw"
+      },
+      "used_in_reports": [
+        "Delta Factory final",
+        "El gezawy",
+        "El gezawy second floor"
+      ],
+      "total_pcs_all_reports": 116
+    },
+    {
+      "id": "LUM-08",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "RS340B 1 xLED19S/ROSE VWB",
+      "finder_search_text": "RS340B 1 xLED19S/ROSE VWB",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/GmjI7lV5SEugHA5CqgsWlA",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "GmjI7lV5SEugHA5CqgsWlA"
+      },
+      "used_in_reports": [
+        "Delta Factory final",
+        "El- Mohands"
+      ],
+      "total_pcs_all_reports": 53
+    },
+    {
+      "id": "LUM-09",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "RS340B 1 xLED27S/830 WB",
+      "finder_search_text": "RS340B 1 xLED27S/830 WB",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/t7a2abrrQHi_fuA7gBwH-g",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "t7a2abrrQHi_fuA7gBwH-g"
+      },
+      "used_in_reports": [
+        "Megapack"
+      ],
+      "total_pcs_all_reports": 65
+    },
+    {
+      "id": "LUM-10",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "RS343B 1 xLED17S/830 VWB",
+      "finder_search_text": "RS343B 1 xLED17S/830 VWB",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/01WIoZrwQAKoDcMe8PUUuQ",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "01WIoZrwQAKoDcMe8PUUuQ"
+      },
+      "used_in_reports": [
+        "El- Mohands"
+      ],
+      "total_pcs_all_reports": 11
+    },
+    {
+      "id": "LUM-11",
+      "manufacturer": "Philips",
+      "article_no": "SM350CI-cd5ae333-5f39-498d-bbe7-d0575d507874",
+      "article_name": "SM350C 40S/840 WIA PCS L1200",
+      "finder_search_text": "SM350CI-cd5ae333-5f39-498d-bbe7-d0575d507874",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/t_0QJLyxT9eTIiECKbIqYA",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "t_0QJLyxT9eTIiECKbIqYA"
+      },
+      "used_in_reports": [
+        "Sham tex factory"
+      ],
+      "total_pcs_all_reports": 560
+    },
+    {
+      "id": "LUM-12",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "SM350C L1200 PSD 1 x40S/840 PCS",
+      "finder_search_text": "SM350C L1200 PSD 1 x40S/840 PCS",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/5HzloNl4T7-gn8fCoijLQQ",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "5HzloNl4T7-gn8fCoijLQQ"
+      },
+      "used_in_reports": [
+        "El Monaged Factory",
+        "El Monaged Factory (1)",
+        "Megapack"
+      ],
+      "total_pcs_all_reports": 222
+    },
+    {
+      "id": "LUM-13",
+      "manufacturer": "Philips",
+      "article_no": null,
+      "article_name": "SM504T LED90S/840 WB",
+      "finder_search_text": "SM504T LED90S/840 WB",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": "https://luminaires.dialux.com/en-US/article/nvQdAUz4Rz6Xg3LOhmc2ag",
+        "luminaire_file": null,
+        "status": "linked",
+        "finder_article_id": "nvQdAUz4Rz6Xg3LOhmc2ag"
+      },
+      "used_in_reports": [
+        "Cleopatra Mall"
+      ],
+      "total_pcs_all_reports": 310
+    },
+    {
+      "id": "LUM-14",
+      "manufacturer": "RIDI Leuchten GmbH",
+      "article_no": "1551103SI",
+      "article_name": "VLGFP1501-5NDSI840B0800-RF-Pos0",
+      "finder_search_text": "1551103SI",
+      "dialux_finder": {
+        "search_page": "https://luminaires.dialux.com/en",
+        "luminaire_url": null,
+        "luminaire_file": null,
+        "status": "not_retrieved",
+        "finder_article_id": null
+      },
+      "used_in_reports": [
+        "ICO corridor"
+      ],
+      "total_pcs_all_reports": 17
+    }
+  ],
+  "reports": [
+    {
+      "report": "Al amal factory",
+      "source_pdf": "Al amal factory _Report.pdf",
+      "markdown_file": "Al_amal_factory__Report.md",
+      "pdf_pages": 18,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.4)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 100,
+        "power_w": 18600.0,
+        "flux_lm": 2697000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 72,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 4,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 28,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 4,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Al Rajhi Specialized Cablles",
+      "source_pdf": "Al Rajhi Specialized Cablles_Report.pdf",
+      "markdown_file": "Al_Rajhi_Specialized_Cablles_Report.md",
+      "pdf_pages": 22,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 328,
+        "power_w": 65600.0,
+        "flux_lm": 9512000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 328,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Appliance Factory 1",
+      "source_pdf": "Appliance Factory 1_Report.pdf",
+      "markdown_file": "Appliance_Factory_1_Report.md",
+      "pdf_pages": 19,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 111,
+        "power_w": 16400.0,
+        "flux_lm": 2378000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 106,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 5,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 100.0,
+          "flux_lm": 14500.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Appliance Factory 2",
+      "source_pdf": "Appliance Factory 2_Report.pdf",
+      "markdown_file": "Appliance_Factory_2_Report.md",
+      "pdf_pages": 11,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.7)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 54,
+        "power_w": 10800.0,
+        "flux_lm": 1566000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 54,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 7,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Arab tech production line",
+      "source_pdf": "Arab tech  production line_Report.pdf",
+      "markdown_file": "Arab_tech_production_line_Report.md",
+      "pdf_pages": 10,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.7)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 45,
+        "power_w": 6750.0,
+        "flux_lm": 978615
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 45,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21747.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 7,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Aramex option1",
+      "source_pdf": "Aramex option1 _Report.pdf",
+      "markdown_file": "Aramex_option1__Report.md",
+      "pdf_pages": 45,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 164,
+        "power_w": 18600.0,
+        "flux_lm": 2697000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 104,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 60,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 50.0,
+          "flux_lm": 7250.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Aramex option3",
+      "source_pdf": "Aramex option3 _Report.pdf",
+      "markdown_file": "Aramex_option3__Report.md",
+      "pdf_pages": 45,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 164,
+        "power_w": 8200.0,
+        "flux_lm": 1267000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 104,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 50.0,
+          "flux_lm": 8000.0,
+          "efficacy_lm_per_w": 160.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 60,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 50.0,
+          "flux_lm": 7250.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "BHC final",
+      "source_pdf": "BHC final.. _Report.pdf",
+      "markdown_file": "BHC_final__Report.md",
+      "pdf_pages": 23,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Site 1 (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 312,
+        "power_w": 312000.0,
+        "flux_lm": 45240000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-02",
+          "pcs": 312,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BVP651 T25 1 xLED500-4S/757 S",
+          "power_w": 1000.0,
+          "flux_lm": 145000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Site 1",
+          "pdf_page": 3,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/QeC6fMr5SIWHVFoe6bQTDQ"
+        }
+      ]
+    },
+    {
+      "report": "Cleopatra Mall",
+      "source_pdf": "Cleopatra Mall_Report.pdf",
+      "markdown_file": "Cleopatra_Mall_Report.md",
+      "pdf_pages": 35,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.31)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 352,
+        "power_w": 4070.0,
+        "flux_lm": 407000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-04",
+          "pcs": 42,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "LL523X 1 xLED100S/850 WB",
+          "power_w": 60.0,
+          "flux_lm": 6000.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 31,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/euGjELCeRjikl8nqoQkQTw"
+        },
+        {
+          "catalog_id": "LUM-13",
+          "pcs": 310,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "SM504T LED90S/840 WB",
+          "power_w": 5.0,
+          "flux_lm": 500.0,
+          "efficacy_lm_per_w": 100.1,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 31,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/nvQdAUz4Rz6Xg3LOhmc2ag"
+        }
+      ]
+    },
+    {
+      "report": "Delta factory",
+      "source_pdf": "Delta factory_Report.pdf",
+      "markdown_file": "Delta_factory_Report.md",
+      "pdf_pages": 11,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.7)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 39,
+        "power_w": 7800.0,
+        "flux_lm": 1131000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 39,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 7,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Delta Factory final",
+      "source_pdf": "Delta Factory  final_Report.pdf",
+      "markdown_file": "Delta_Factory_final_Report.md",
+      "pdf_pages": 29,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.2)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 6,
+        "pcs": 18,
+        "power_w": 1167.0,
+        "flux_lm": 158160
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 6,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-07",
+          "pcs": 2,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RC133V LED36S/840 OC WIA W62L62",
+          "power_w": 48.0,
+          "flux_lm": 5280.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/fZD7mCp8Qva7MhjjTt-wkw"
+        },
+        {
+          "catalog_id": "LUM-08",
+          "pcs": 4,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED19S/ROSE VWB",
+          "power_w": 10.0,
+          "flux_lm": 1000.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/GmjI7lV5SEugHA5CqgsWlA"
+        },
+        {
+          "catalog_id": "LUM-08",
+          "pcs": 1,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED19S/ROSE VWB",
+          "power_w": 15.0,
+          "flux_lm": 1500.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/GmjI7lV5SEugHA5CqgsWlA"
+        },
+        {
+          "catalog_id": "LUM-08",
+          "pcs": 2,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED19S/ROSE VWB",
+          "power_w": 22.0,
+          "flux_lm": 2200.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/GmjI7lV5SEugHA5CqgsWlA"
+        },
+        {
+          "catalog_id": "LUM-08",
+          "pcs": 3,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED19S/ROSE VWB",
+          "power_w": 24.0,
+          "flux_lm": 2400.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/GmjI7lV5SEugHA5CqgsWlA"
+        }
+      ]
+    },
+    {
+      "report": "Egypt Kem",
+      "source_pdf": "Egypt Kem_Report.pdf",
+      "markdown_file": "Egypt_Kem_Report.md",
+      "pdf_pages": 22,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Default (p.14)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 169,
+        "power_w": 33800.0,
+        "flux_lm": 4901000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 169,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Default",
+          "pdf_page": 14,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "El gezawy",
+      "source_pdf": "El gezawy _Report.pdf",
+      "markdown_file": "El_gezawy__Report.md",
+      "pdf_pages": 109,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 57,
+        "power_w": 2052.0,
+        "flux_lm": 225720
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-07",
+          "pcs": 57,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RC133V LED36S/840 OC WIA W62L62",
+          "power_w": 36.0,
+          "flux_lm": 3960.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/fZD7mCp8Qva7MhjjTt-wkw"
+        }
+      ]
+    },
+    {
+      "report": "El Gezawy Factory First Floor",
+      "source_pdf": "El Gezawy Factory First Floor _Report.pdf",
+      "markdown_file": "El_Gezawy_Factory_First_Floor__Report.md",
+      "pdf_pages": 13,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 2 (p.8)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 44,
+        "power_w": 5750.0,
+        "flux_lm": 833750
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 27,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 2",
+          "pdf_page": 8,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 17,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 100.0,
+          "flux_lm": 14500.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 2",
+          "pdf_page": 8,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "El Gezawy Factory Thrid Floor",
+      "source_pdf": "El Gezawy Factory Thrid Floor _Report.pdf",
+      "markdown_file": "El_Gezawy_Factory_Thrid_Floor__Report.md",
+      "pdf_pages": 17,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 2 (p.13)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 186,
+        "power_w": 6696.0,
+        "flux_lm": 736560
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-05",
+          "pcs": 186,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "LL612X 1 xLED50S/840 MB",
+          "power_w": 36.0,
+          "flux_lm": 3960.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 2",
+          "pdf_page": 13,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/8chV0qRlQaufOAE7Acv6Xw"
+        }
+      ]
+    },
+    {
+      "report": "El gezawy second floor",
+      "source_pdf": "El gezawy_second floor _Report.pdf",
+      "markdown_file": "El_gezawy_second_floor__Report.md",
+      "pdf_pages": 78,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 57,
+        "power_w": 2052.0,
+        "flux_lm": 225720
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-07",
+          "pcs": 57,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RC133V LED36S/840 OC WIA W62L62",
+          "power_w": 36.0,
+          "flux_lm": 3960.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/fZD7mCp8Qva7MhjjTt-wkw"
+        }
+      ]
+    },
+    {
+      "report": "El Monaged Factory",
+      "source_pdf": "El Monaged Factory_Report.pdf",
+      "markdown_file": "El_Monaged_Factory_Report.md",
+      "pdf_pages": 29,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.2)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 3,
+        "pcs": 197,
+        "power_w": 21636.0,
+        "flux_lm": 3009960
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 72,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 24,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-12",
+          "pcs": 101,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "SM350C L1200 PSD 1 x40S/840 PCS",
+          "power_w": 36.0,
+          "flux_lm": 3960.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/5HzloNl4T7-gn8fCoijLQQ"
+        }
+      ]
+    },
+    {
+      "report": "El Monaged Factory (1)",
+      "source_pdf": "El Monaged Factory_Report (1).pdf",
+      "markdown_file": "El_Monaged_Factory_Report_1.md",
+      "pdf_pages": 29,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.2)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 3,
+        "pcs": 197,
+        "power_w": 21636.0,
+        "flux_lm": 3009960
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 72,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 24,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-12",
+          "pcs": 101,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "SM350C L1200 PSD 1 x40S/840 PCS",
+          "power_w": 36.0,
+          "flux_lm": 3960.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/5HzloNl4T7-gn8fCoijLQQ"
+        }
+      ]
+    },
+    {
+      "report": "El Nasr Factory FL",
+      "source_pdf": "El Nasr Factory FL_Report.pdf",
+      "markdown_file": "El_Nasr_Factory_FL_Report.md",
+      "pdf_pages": 22,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 8 (p.19)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 312,
+        "power_w": 62400.0,
+        "flux_lm": 6864000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-01",
+          "pcs": 312,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BVP130 T25 S LED131/- NO",
+          "power_w": 200.0,
+          "flux_lm": 22000.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": 45.0,
+          "scope": "Building 1 · Storey 1 · Room 8",
+          "pdf_page": 19,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/Ct9EH5lVQgOgOJd4MF7pMg"
+        }
+      ]
+    },
+    {
+      "report": "El Nasr Factory hb",
+      "source_pdf": "El Nasr Factory hb_Report.pdf",
+      "markdown_file": "El_Nasr_Factory_hb_Report.md",
+      "pdf_pages": 30,
+      "extraction_method": "room list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 (Light scene 1) (p.5)"
+      ],
+      "notes": [
+        "Luminaire table taken from the \"Room list\" page (no separate Luminaire list page); totals are pcs x P from that table."
+      ],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 484,
+        "power_w": 96800.0,
+        "flux_lm": 14036000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 484,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 (Light scene 1)",
+          "pdf_page": 5,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "El- Mohands",
+      "source_pdf": "El- Mohands _Report.pdf",
+      "markdown_file": "El-_Mohands__Report.md",
+      "pdf_pages": 33,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 4,
+        "pcs": 57,
+        "power_w": 1181.0,
+        "flux_lm": 119180
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-05",
+          "pcs": 3,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "LL612X 1 xLED50S/840 MB",
+          "power_w": 36.0,
+          "flux_lm": 3960.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/8chV0qRlQaufOAE7Acv6Xw"
+        },
+        {
+          "catalog_id": "LUM-08",
+          "pcs": 42,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED19S/ROSE VWB",
+          "power_w": 22.0,
+          "flux_lm": 2200.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/GmjI7lV5SEugHA5CqgsWlA"
+        },
+        {
+          "catalog_id": "LUM-08",
+          "pcs": 1,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED19S/ROSE VWB",
+          "power_w": 28.0,
+          "flux_lm": 2800.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/GmjI7lV5SEugHA5CqgsWlA"
+        },
+        {
+          "catalog_id": "LUM-10",
+          "pcs": 11,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS343B 1 xLED17S/830 VWB",
+          "power_w": 11.0,
+          "flux_lm": 1100.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/01WIoZrwQAKoDcMe8PUUuQ"
+        }
+      ]
+    },
+    {
+      "report": "El-Misrieen factory",
+      "source_pdf": "El-Misrieen factory _Report.pdf",
+      "markdown_file": "El-Misrieen_factory__Report.md",
+      "pdf_pages": 23,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.7)",
+        "Building 1 · Storey 1 · Room 2 (p.13)",
+        "Building 1 · Storey 1 · Room 3 (p.20)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 52,
+        "power_w": 7800.0,
+        "flux_lm": 1131000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 52,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1; Building 1 · Storey 1 · Room 2; Building 1 · Storey 1 · Room 3",
+          "pdf_page": 7,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Enco Steel",
+      "source_pdf": "Enco Steel Report.pdf",
+      "markdown_file": "Enco_Steel_Report.md",
+      "pdf_pages": 5,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 111,
+        "power_w": 16650.0,
+        "flux_lm": 2413251
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 111,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21741.0,
+          "efficacy_lm_per_w": 144.9,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Estivan Factory",
+      "source_pdf": "Estivan Factory _Report.pdf",
+      "markdown_file": "Estivan_Factory__Report.md",
+      "pdf_pages": 30,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.4)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 35,
+        "power_w": 3500.0,
+        "flux_lm": 507500
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 35,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 100.0,
+          "flux_lm": 14500.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 4,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Estivan Factory (1)",
+      "source_pdf": "Estivan Factory _Report (1).pdf",
+      "markdown_file": "Estivan_Factory__Report_1.md",
+      "pdf_pages": 31,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.4)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 35,
+        "power_w": 3800.0,
+        "flux_lm": 551000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 29,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 100.0,
+          "flux_lm": 14500.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 4,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 6,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 4,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Evedal",
+      "source_pdf": "Evedal_Report.pdf",
+      "markdown_file": "Evedal_Report.md",
+      "pdf_pages": 12,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 78,
+        "power_w": 15600.0,
+        "flux_lm": 2262000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 78,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Fresh factory",
+      "source_pdf": "Fresh factory _Report.pdf",
+      "markdown_file": "Fresh_factory__Report.md",
+      "pdf_pages": 24,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.23)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 324,
+        "power_w": 15552.0,
+        "flux_lm": 1710720
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-06",
+          "pcs": 324,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RC133V G4 W62L62 PSU 1 xLED36S/840 OC",
+          "power_w": 48.0,
+          "flux_lm": 5280.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 23,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/WWzCwwAoTfmPQFQTJKF9Pg"
+        }
+      ]
+    },
+    {
+      "report": "Fresh factory option 2",
+      "source_pdf": "Fresh factory option 2 _Report.pdf",
+      "markdown_file": "Fresh_factory_option_2__Report.md",
+      "pdf_pages": 29,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.28)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 432,
+        "power_w": 20736.0,
+        "flux_lm": 2280960
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-06",
+          "pcs": 432,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RC133V G4 W62L62 PSU 1 xLED36S/840 OC",
+          "power_w": 48.0,
+          "flux_lm": 5280.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 28,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/WWzCwwAoTfmPQFQTJKF9Pg"
+        }
+      ]
+    },
+    {
+      "report": "Global factory",
+      "source_pdf": "Global factory _Report.pdf",
+      "markdown_file": "Global_factory__Report.md",
+      "pdf_pages": 15,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Site 1 (p.6)",
+        "Building 1 · Storey 1 · Room 2 (p.12)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 13,
+        "power_w": 1950.0,
+        "flux_lm": 282750
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-01",
+          "pcs": 3,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BVP130 T25 S LED131/- NO",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Site 1",
+          "pdf_page": 6,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/Ct9EH5lVQgOgOJd4MF7pMg"
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 10,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 2",
+          "pdf_page": 12,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Gloria Factory",
+      "source_pdf": "Gloria Factory _Report.pdf",
+      "markdown_file": "Gloria_Factory__Report.md",
+      "pdf_pages": 17,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (p.14)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 225,
+        "power_w": 45000.0,
+        "flux_lm": 6525000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 225,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 14,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Gresco",
+      "source_pdf": "Gresco _Report.pdf",
+      "markdown_file": "Gresco__Report.md",
+      "pdf_pages": 25,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 (p.4)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 160,
+        "power_w": 16000.0,
+        "flux_lm": 2320000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 160,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 100.0,
+          "flux_lm": 14500.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 4,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "ICO corridor",
+      "source_pdf": "ICO_corridor_Report.pdf",
+      "markdown_file": "ICO_corridor_Report.md",
+      "pdf_pages": 8,
+      "extraction_method": "luminaire layout plan pages",
+      "scopes_used": [
+        "Building 1 · Storey 1 · Room 1 (layout plan)"
+      ],
+      "notes": [
+        "No luminaire-list table in this report; luminaires and counts were read from the \"Luminaire layout plan\" pages."
+      ],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 17,
+        "power_w": 119.0,
+        "flux_lm": 11900
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-14",
+          "pcs": 17,
+          "manufacturer": "RIDI Leuchten GmbH",
+          "article_no": "1551103SI",
+          "article_name": "VLGFP1501-5NDSI840B0800-RF-Pos0",
+          "power_w": 7.0,
+          "flux_lm": 700.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · Room 1",
+          "pdf_page": 4,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Inco Steel",
+      "source_pdf": "Inco Steel Report.pdf",
+      "markdown_file": "Inco_Steel_Report.md",
+      "pdf_pages": 10,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 108,
+        "power_w": 16200.0,
+        "flux_lm": 2349000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 108,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Karta Misr",
+      "source_pdf": "Karta Misr _Report.pdf",
+      "markdown_file": "Karta_Misr__Report.md",
+      "pdf_pages": 20,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 (p.6)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 14,
+        "power_w": 2800.0,
+        "flux_lm": 406000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 14,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 6,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Megapack",
+      "source_pdf": "Megapack_Report.pdf",
+      "markdown_file": "Megapack_Report.md",
+      "pdf_pages": 97,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 1 · Storey 1 (p.2)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 7,
+        "pcs": 91,
+        "power_w": 1922.0,
+        "flux_lm": 192200
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-04",
+          "pcs": 6,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "LL523X 1 xLED100S/850 WB",
+          "power_w": 60.0,
+          "flux_lm": 6000.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/euGjELCeRjikl8nqoQkQTw"
+        },
+        {
+          "catalog_id": "LUM-09",
+          "pcs": 25,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED27S/830 WB",
+          "power_w": 10.0,
+          "flux_lm": 1000.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/t7a2abrrQHi_fuA7gBwH-g"
+        },
+        {
+          "catalog_id": "LUM-09",
+          "pcs": 9,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED27S/830 WB",
+          "power_w": 16.0,
+          "flux_lm": 1600.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/t7a2abrrQHi_fuA7gBwH-g"
+        },
+        {
+          "catalog_id": "LUM-09",
+          "pcs": 4,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED27S/830 WB",
+          "power_w": 15.0,
+          "flux_lm": 1500.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/t7a2abrrQHi_fuA7gBwH-g"
+        },
+        {
+          "catalog_id": "LUM-09",
+          "pcs": 27,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "RS340B 1 xLED27S/830 WB",
+          "power_w": 12.0,
+          "flux_lm": 1200.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/t7a2abrrQHi_fuA7gBwH-g"
+        },
+        {
+          "catalog_id": "LUM-12",
+          "pcs": 16,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "SM350C L1200 PSD 1 x40S/840 PCS",
+          "power_w": 40.0,
+          "flux_lm": 4000.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/5HzloNl4T7-gn8fCoijLQQ"
+        },
+        {
+          "catalog_id": "LUM-12",
+          "pcs": 4,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "SM350C L1200 PSD 1 x40S/840 PCS",
+          "power_w": 36.0,
+          "flux_lm": 3600.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1",
+          "pdf_page": 2,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/5HzloNl4T7-gn8fCoijLQQ"
+        }
+      ]
+    },
+    {
+      "report": "Montana Factory",
+      "source_pdf": "Montana Factory _Report.pdf",
+      "markdown_file": "Montana_Factory__Report.md",
+      "pdf_pages": 11,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 2 · Storey 1 · Room 1 (p.8)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 23,
+        "power_w": 3450.0,
+        "flux_lm": 345069
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 23,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 15003.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 2 · Storey 1 · Room 1",
+          "pdf_page": 8,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Montana Factory 3Y",
+      "source_pdf": "Montana Factory 3Y_Report.pdf",
+      "markdown_file": "Montana_Factory_3Y_Report.md",
+      "pdf_pages": 10,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 2 · Storey 1 · Room 1 (p.7)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 25,
+        "power_w": 3750.0,
+        "flux_lm": 412500
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 25,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 16500.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 2 · Storey 1 · Room 1",
+          "pdf_page": 7,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Montana Factory 5Y",
+      "source_pdf": "Montana Factory 5Y_Report.pdf",
+      "markdown_file": "Montana_Factory_5Y_Report.md",
+      "pdf_pages": 10,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 2 · Storey 1 · Room 1 (p.7)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 19,
+        "power_w": 2850.0,
+        "flux_lm": 413250
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 19,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 2 · Storey 1 · Room 1",
+          "pdf_page": 7,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Nascom",
+      "source_pdf": "Nascom_Report.pdf",
+      "markdown_file": "Nascom_Report.md",
+      "pdf_pages": 17,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.3)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 2,
+        "pcs": 51,
+        "power_w": 8850.0,
+        "flux_lm": 1283250
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 24,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        },
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 27,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 3,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "NESSTRA With 100 watt",
+      "source_pdf": "NESSTRA Report With 100 watt.pdf",
+      "markdown_file": "NESSTRA_Report_With_100_watt.md",
+      "pdf_pages": 7,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.2)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 36,
+        "power_w": 3600.0,
+        "flux_lm": 522000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 36,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 100.0,
+          "flux_lm": 14500.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "NESSTRA With 150 watt",
+      "source_pdf": "NESSTRA Report With 150 watt.pdf",
+      "markdown_file": "NESSTRA_Report_With_150_watt.md",
+      "pdf_pages": 7,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Whole project (p.2)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 36,
+        "power_w": 5400.0,
+        "flux_lm": 783000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 36,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 150.0,
+          "flux_lm": 21750.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Whole project",
+          "pdf_page": 2,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Nextip ground floor",
+      "source_pdf": "Nextip ground floor _Report.pdf",
+      "markdown_file": "Nextip_ground_floor__Report.md",
+      "pdf_pages": 22,
+      "extraction_method": "none",
+      "scopes_used": [],
+      "notes": [
+        "No luminaire data in this report: it only describes generic fixtures in text (e.g. suspended linear, recessed, pendant) with no manufacturer or article number, so there is nothing to look up in the DIALux Luminaire Finder."
+      ],
+      "totals": {
+        "luminaire_types": 0,
+        "pcs": 0,
+        "power_w": 0,
+        "flux_lm": 0
+      },
+      "luminaires": []
+    },
+    {
+      "report": "Ola textile factory",
+      "source_pdf": "Ola textile factory_Report.pdf",
+      "markdown_file": "Ola_textile_factory_Report.md",
+      "pdf_pages": 8,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 2 · Storey 1 · Room 6 (p.5)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 6,
+        "power_w": 600.0,
+        "flux_lm": 87000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 6,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 100.0,
+          "flux_lm": 14500.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 2 · Storey 1 · Room 6",
+          "pdf_page": 5,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Ola textile factory (1)",
+      "source_pdf": "Ola textile factory_Report (1).pdf",
+      "markdown_file": "Ola_textile_factory_Report_1.md",
+      "pdf_pages": 8,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Building 2 · Storey 1 · Room 6 (p.5)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 3,
+        "power_w": 600.0,
+        "flux_lm": 87000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-03",
+          "pcs": 3,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BY698P LED265CW G2 WB",
+          "power_w": 200.0,
+          "flux_lm": 29000.0,
+          "efficacy_lm_per_w": 145.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 2 · Storey 1 · Room 6",
+          "pdf_page": 5,
+          "luminaire_url": null
+        }
+      ]
+    },
+    {
+      "report": "Sham tex factory",
+      "source_pdf": "Sham tex factory Report.pdf",
+      "markdown_file": "Sham_tex_factory_Report.md",
+      "pdf_pages": 28,
+      "extraction_method": "luminaire layout plan pages",
+      "scopes_used": [
+        "Building 1 · Storey 1 · sham tex factory (layout plan)"
+      ],
+      "notes": [
+        "No luminaire-list table in this report; luminaires and counts were read from the \"Luminaire layout plan\" pages."
+      ],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 560,
+        "power_w": 44800.0,
+        "flux_lm": 4480000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-11",
+          "pcs": 560,
+          "manufacturer": "Philips",
+          "article_no": "SM350CI-cd5ae333-5f39-498d-bbe7-d0575d507874",
+          "article_name": "SM350C 40S/840 WIA PCS L1200",
+          "power_w": 80.0,
+          "flux_lm": 8000.0,
+          "efficacy_lm_per_w": 100.0,
+          "ugr": null,
+          "index": null,
+          "scope": "Building 1 · Storey 1 · sham tex factory",
+          "pdf_page": 4,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/t_0QJLyxT9eTIiECKbIqYA"
+        }
+      ]
+    },
+    {
+      "report": "sun captial school",
+      "source_pdf": "sun captial school_Report.pdf",
+      "markdown_file": "sun_captial_school_Report.md",
+      "pdf_pages": 13,
+      "extraction_method": "luminaire list table",
+      "scopes_used": [
+        "Site 1 (p.10)"
+      ],
+      "notes": [],
+      "totals": {
+        "luminaire_types": 1,
+        "pcs": 28,
+        "power_w": 5600.0,
+        "flux_lm": 616000
+      },
+      "luminaires": [
+        {
+          "catalog_id": "LUM-01",
+          "pcs": 28,
+          "manufacturer": "Philips",
+          "article_no": null,
+          "article_name": "BVP130 T25 S LED131/- NO",
+          "power_w": 200.0,
+          "flux_lm": 22000.0,
+          "efficacy_lm_per_w": 110.0,
+          "ugr": null,
+          "index": 45.0,
+          "scope": "Site 1",
+          "pdf_page": 10,
+          "luminaire_url": "https://luminaires.dialux.com/en-US/article/Ct9EH5lVQgOgOJd4MF7pMg"
+        }
+      ]
+    }
+  ]
+}
