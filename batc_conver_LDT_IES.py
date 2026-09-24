@@ -56,17 +56,31 @@ def polar_curve_image(
     isym: int,
     output_path,
     title: str,
+    plane_indices: list | None = None,
+    dpi: int = 150,
+    figsize=(7.5, 7.5),
+    reuse_figure: bool = False,
 ) -> str:
     """
     Render the photometric polar curve as a PNG, reproducing the web app's
     chart (bilateral cut: selected C-plane on the right, its C+180 mirror on
     the left; gamma 0 = nadir at the top, clockwise).
+
+    `plane_indices`: the C-plane indices to draw. Defaults to the web app's
+    default set (first plane, the mc/4 plane and the mc/2 plane).
+
+    `reuse_figure`: keep the matplotlib figure alive between calls (per-plane
+    batch rendering) to cut per-image overhead.
     """
     import numpy as np
     import matplotlib
 
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
+
+    global _POLAR_FIG_CACHE
+    if _POLAR_FIG_CACHE is None:
+        _POLAR_FIG_CACHE = {}
 
     mc = len(c_angles)
 
@@ -83,8 +97,20 @@ def polar_curve_image(
         return best_index
 
     defaults = sorted({0, mc // 4 if mc > 1 else 0, mc // 2 if mc > 2 else mc // 2})
+    if plane_indices is not None:
+        defaults = sorted(set(int(i) for i in plane_indices))
 
-    fig, ax = plt.subplots(figsize=(7.5, 7.5), subplot_kw={"projection": "polar"})
+    if reuse_figure:
+        cache_key = tuple(figsize)
+        if cache_key not in _POLAR_FIG_CACHE:
+            fig, ax = plt.subplots(figsize=figsize, subplot_kw={"projection": "polar"})
+            _POLAR_FIG_CACHE[cache_key] = (fig, ax)
+        else:
+            fig, ax = _POLAR_FIG_CACHE[cache_key]
+            ax.cla()
+    else:
+        fig, ax = plt.subplots(figsize=figsize, subplot_kw={"projection": "polar"})
+
     ax.set_theta_direction(-1)          # clockwise, like Plotly "clockwise"
     ax.set_theta_offset(np.pi / 2)      # rotation 90 -> gamma 0 (nadir) at top
     ax.set_theta_zero_location("N")
@@ -122,9 +148,14 @@ def polar_curve_image(
     ax.set_title(title, pad=24, fontsize=12)
     ax.legend(loc="upper right", bbox_to_anchor=(1.28, 1.0), frameon=False, fontsize=9)
 
-    fig.savefig(output_path, dpi=150, bbox_inches="tight")
-    plt.close(fig)
+    fig.savefig(output_path, dpi=dpi, bbox_inches="tight")
+    if not reuse_figure:
+        plt.close(fig)
     return str(output_path)
+
+
+# Keyed by figsize -> (figure, polar axes) when `reuse_figure` is used.
+_POLAR_FIG_CACHE = None
 
 
 def convert_file(ldt_path: Path, output_dir: Path, rotation_deg: float) -> Path:

@@ -73,5 +73,305 @@
       "total_lumens": 25000.0,
       "total_watts": 157.0
     }
+  },
+  {
+    "file_id": "9c66729e09d44d93901481aaca63ba2f_3840.ldt",
+    "filename": "3840.ldt",
+    "size": 6222,
+    "uploaded_at": "2026-09-24T12:29:24.023183+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 37,
+      "minimum_intensity": 0.1,
+      "maximum_intensity": 666.5,
+      "average_intensity": 283.2231231231231,
+      "total_samples": 2664,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 4000.0,
+      "total_watts": 30.0
+    }
+  },
+  {
+    "file_id": "8ab11a8956254458831b5924e5d7d873_48539.ldt",
+    "filename": "48539.ldt",
+    "size": 9891,
+    "uploaded_at": "2026-09-24T12:29:34.020144+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 64,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 1438.8,
+      "average_intensity": 258.39066840277775,
+      "total_samples": 4608,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 13000.0,
+      "total_watts": 126.0
+    }
+  },
+  {
+    "file_id": "1fff7e0b99ac4ec0adf4fd7fd43ab013_7955.ldt",
+    "filename": "7955.ldt",
+    "size": 5824,
+    "uploaded_at": "2026-09-24T12:29:41.217417+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 35,
+      "minimum_intensity": 0.5,
+      "maximum_intensity": 520.8,
+      "average_intensity": 186.59825396825397,
+      "total_samples": 2520,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 10100.0,
+      "total_watts": 71.0
+    }
+  },
+  {
+    "file_id": "f2c656de35b5411eb1854a5ddfdc4963_2495.ldt",
+    "filename": "2495.ldt",
+    "size": 6222,
+    "uploaded_at": "2026-09-24T12:29:47.198816+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 37,
+      "minimum_intensity": 0.1,
+      "maximum_intensity": 666.5,
+      "average_intensity": 283.2231231231231,
+      "total_samples": 2664,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 3200.0,
+      "total_watts": 25.0
+    }
+  },
+  {
+    "file_id": "c750c6d92ea149a9bf2eef33ffd49249_18307.ldt",
+    "filename": "18307.ldt",
+    "size": 5823,
+    "uploaded_at": "2026-09-24T12:29:52.441819+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 35,
+      "minimum_intensity": 0.5,
+      "maximum_intensity": 520.8,
+      "average_intensity": 186.59825396825397,
+      "total_samples": 2520,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 9200.0,
+      "total_watts": 63.0
+    }
+  },
+  {
+    "file_id": "5b25323f673742999ca7b3c9d2a0320f_43461.ldt",
+    "filename": "43461.ldt",
+    "size": 10424,
+    "uploaded_at": "2026-09-24T12:29:56.842056+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 68,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 1189.43,
+      "average_intensity": 181.34321486928104,
+      "total_samples": 4896,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 50000.0,
+      "total_watts": 310.0
+    }
+  },
+  {
+    "file_id": "f44cb6f24d7e4a439b566eae9e15b593_51557.ldt",
+    "filename": "51557.ldt",
+    "size": 1359,
+    "uploaded_at": "2026-09-24T12:30:03.086717+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 1,
+      "c_planes": 1,
+      "gamma_angles": 78,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 2398.25,
+      "average_intensity": 1551.6512820512821,
+      "total_samples": 78,
+      "is_half_beam": true,
+      "symmetry_label": "Rotationally symmetric (point-symmetric)",
+      "total_lumens": 2750.0,
+      "total_watts": 23.5
+    }
+  },
+  {
+    "file_id": "9c0694f1b7ea4aceae35453e020d2014_15394.ldt",
+    "filename": "15394.ldt",
+    "size": 6827,
+    "uploaded_at": "2026-09-24T12:30:10.343273+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 41,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 477.3,
+      "average_intensity": 213.29905149051493,
+      "total_samples": 2952,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 3600.0,
+      "total_watts": 29.0
+    }
+  },
+  {
+    "file_id": "d8f0127feba6412398e391ae013b98a1_34313.ldt",
+    "filename": "34313.ldt",
+    "size": 1081,
+    "uploaded_at": "2026-09-24T12:30:14.136040+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 1,
+      "c_planes": 1,
+      "gamma_angles": 60,
+      "minimum_intensity": 0.11,
+      "maximum_intensity": 1168.13,
+      "average_intensity": 573.4031666666667,
+      "total_samples": 60,
+      "is_half_beam": true,
+      "symmetry_label": "Rotationally symmetric (point-symmetric)",
+      "total_lumens": 1900.0,
+      "total_watts": 20.5
+    }
+  },
+  {
+    "file_id": "55785f2c9c964a3293fe0b56ed522d1a_57536.ldt",
+    "filename": "57536.ldt",
+    "size": 7479,
+    "uploaded_at": "2026-09-24T12:30:18.526903+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 49,
+      "minimum_intensity": 0.1,
+      "maximum_intensity": 651.0,
+      "average_intensity": 144.1001700680272,
+      "total_samples": 3528,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 4600.0,
+      "total_watts": 36.0
+    }
+  },
+  {
+    "file_id": "4067af0abaf44a258e384f4f42caddef_23077.ldt",
+    "filename": "23077.ldt",
+    "size": 1080,
+    "uploaded_at": "2026-09-24T12:30:22.680928+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 1,
+      "c_planes": 1,
+      "gamma_angles": 60,
+      "minimum_intensity": 0.11,
+      "maximum_intensity": 1183.99,
+      "average_intensity": 576.7636666666666,
+      "total_samples": 60,
+      "is_half_beam": true,
+      "symmetry_label": "Rotationally symmetric (point-symmetric)",
+      "total_lumens": 1750.0,
+      "total_watts": 14.4
+    }
+  },
+  {
+    "file_id": "ff74e733650040a18c05c69b3ac7c1f6_15443.ldt",
+    "filename": "15443.ldt",
+    "size": 6827,
+    "uploaded_at": "2026-09-24T12:30:29.522588+00:00",
+    "summary": {
+      "luminaire_name": "LEO",
+      "luminaire_number": "",
+      "manufacturer": "",
+      "number_of_lamps": [
+        1
+      ],
+      "isym": 4,
+      "c_planes": 72,
+      "gamma_angles": 41,
+      "minimum_intensity": 0.0,
+      "maximum_intensity": 477.3,
+      "average_intensity": 213.29905149051493,
+      "total_samples": 2952,
+      "is_half_beam": true,
+      "symmetry_label": "Quadrant symmetric (quarter-beam, one quadrant stored)",
+      "total_lumens": 3600.0,
+      "total_watts": 29.0
+    }
   }
 ]
